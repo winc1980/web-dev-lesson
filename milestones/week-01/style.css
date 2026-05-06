@@ -1,0 +1,27 @@
+/* Week 01: 構造の作成 (CSSは最小限) */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+ul {
+    padding-left: 20px;
+}

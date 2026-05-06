@@ -1,0 +1,138 @@
+/* [Phase 1] の完成形をベースに、Phase 2 のための共通スタイルを定義 */
+
+* {
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+}
+
+/* --- サイドバー (Week 03 から継承) --- */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #34495e;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #3498db;
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar p {
+    color: #bdc3c7;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sns-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.sns-links a {
+    color: white;
+    text-decoration: none;
+    background-color: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sns-links a:hover {
+    background-color: #2980b9;
+}
+
+/* --- メインコンテンツ --- */
+.main-content {
+    padding: 40px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-left: 5px solid #3498db;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* --- [Week 03] Skills Grid --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* --- [Week 03] Hobbies Flex --- */
+.hobbies-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.hobby-card {
+    flex: 1;
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hobby-card h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+/* --- レスポンシブ --- */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+    .hobbies-flex {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,78 @@
+/* [Week 01] 基本設定を引き継ぎつつ、[Week 02] で詳細なデザインを適用 */
+
+body {
+    background-color: #eef2f3;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- [Week 02 新規追加] カードの装飾 --- */
+.card {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 40px;
+    border-radius: 15px; /* 角丸 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 影 */
+    border: 1px solid #ddd;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+section h2 {
+    font-size: 18px;
+    color: #3498db;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sns-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sns-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.sns-links a:hover {
+    color: #2980b9;
+}

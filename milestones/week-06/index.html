@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard | WINC Taro (Week 06)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <header>
+                <div class="avatar" id="avatar"></div>
+                <h1 id="user-name">WINC 太郎</h1>
+                <p id="user-role">Front-end Learner</p>
+                <!-- [Week 06 新規追加] ダークモードボタン -->
+                <button id="theme-toggle">Dark Mode</button>
+            </header>
+            <nav>
+                <ul class="sns-links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="main-content">
+            <!-- [Week 06 新規追加] ステータス更新フォーム -->
+            <section id="status-update">
+                <h2>Update Status</h2>
+                <form id="status-form">
+                    <input type="text" id="status-input" placeholder="今何してる？">
+                    <button type="submit">更新</button>
+                </form>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p id="about-text">こんにちは！WINC 太郎です。</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid" id="skills-list">
+                    <!-- JSで動的に追加 -->
+                </div>
+            </section>
+
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies-flex">
+                    <article class="hobby-card">
+                        <h3>サウナ</h3>
+                        <p>週末はホームサウナでととのっています。</p>
+                    </article>
+                    <article class="hobby-card">
+                        <h3>読書</h3>
+                        <p>技術書から小説まで幅広く読みます。</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- [Week 06 新規追加] いいねカウンター -->
+            <section id="counter-section">
+                <h2>Support</h2>
+                <button id="like-btn">❤️ <span id="like-count">0</span> Likes</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

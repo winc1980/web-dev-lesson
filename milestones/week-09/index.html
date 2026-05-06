@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Dashboard | WINC Taro (Week 08)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <header>
+                <div class="avatar" id="avatar"></div>
+                <h1 id="user-name">Loading...</h1>
+                <p id="user-role">GitHub Profile</p>
+                <div id="stats">
+                    Followers: <span id="follower-count">-</span>
+                </div>
+                <button id="theme-toggle">Dark Mode</button>
+            </header>
+            <nav>
+                <ul class="sns-links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="main-content">
+            <!-- [Week 08 新規追加] ウィジェットエリア -->
+            <div class="widget-grid">
+                
+                <!-- 天気ウィジェット -->
+                <section class="widget" id="weather-widget">
+                    <h2>Weather (Tokyo)</h2>
+                    <div class="widget-content">
+                        <p id="temp">--°C</p>
+                        <p id="condition">Loading...</p>
+                    </div>
+                </section>
+
+                <!-- GitHub 最新リポジトリ (Week 07 から継承してウィジェット化) -->
+                <section class="widget" id="github-widget">
+                    <h2>Latest Project</h2>
+                    <div id="repo-name">読み込み中...</div>
+                    <a id="repo-link" href="#" target="_blank">View Repo</a>
+                </section>
+
+                <!-- 名言ウィジェット (Week 08 新規追加) -->
+                <section class="widget" id="quote-widget">
+                    <h2>Daily Quote</h2>
+                    <div class="widget-content">
+                        <blockquote id="quote-text">"Patience is key."</blockquote>
+                        <cite id="quote-author">- Unknown</cite>
+                    </div>
+                </section>
+            </div>
+
+            <!-- [Week 08 新規追加] ニュースセクション -->
+            <section id="news-section">
+                <h2>Latest News Feed</h2>
+                <ul id="news-list">
+                    <li>Loading news...</li>
+                </ul>
+            </section>
+
+            <!-- [Week 06] からの継承 -->
+            <section id="status-update">
+                <h2>Update Status</h2>
+                <form id="status-form">
+                    <input type="text" id="status-input" placeholder="今何してる？">
+                    <button type="submit">更新</button>
+                </form>
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p id="about-text">こんにちは！WINC 太郎です。</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid" id="skills-list"></div>
+            </section>
+
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies-flex">
+                    <article class="hobby-card">
+                        <h3>サウナ</h3>
+                        <p>週末はホームサウナでととのっています。</p>
+                    </article>
+                    <article class="hobby-card">
+                        <h3>読書</h3>
+                        <p>技術書から小説まで幅広く読みます。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="counter-section">
+                <h2>Support</h2>
+                <button id="like-btn">❤️ <span id="like-count">0</span> Likes</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
