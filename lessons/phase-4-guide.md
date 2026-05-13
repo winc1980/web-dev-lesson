@@ -21,7 +21,7 @@ a {
 }
 code {
     background-color: #292524;
-    color: #fff7ed;
+    color: #00fbff
 }
 </style>
 

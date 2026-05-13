@@ -6,16 +6,29 @@
 本ワークショップは、毎週一つの「パーツ」を作り上げ、最終的に巨大なプロジェクトを完成させるスタイルを採用しています。
 
 ### Phase 1: HTML & CSS (Weeks 1-4)
-- セマンティックHTML、CSSデザイン、Flexbox/Gridレイアウト、レスポンシブ。
+- **第1週: 構造を作る (HTML基礎)** - セマンティックHTMLによる文書構造の設計。
+- **第2週: 外装を整える (CSS基礎)** - セレクタ、ボックスモデル、基本的なスタイリング。
+- **第3週: 配置を極める (Flexbox & Grid)** - モダンなレイアウト手法の習得。
+- **第4週: どこでも美しく (Responsive Design)** - メディアクエリを用いたマルチデバイス対応。
 
 ### Phase 2: JavaScript & Git (Weeks 5-9)
-- DOM操作、イベント、非同期通信（Fetch API）、Gitによるバージョン管理。
+- **第5週: 命を吹き込む (JS & DOM基礎)** - JavaScriptによる動的な要素操作の基本。
+- **第6週: 反応するページ (Events & Interaction)** - ユーザーのクリックや入力に応答するUI。
+- **第7週: 外部とつながる (Async & Fetch API)** - 非同期処理と外部APIからのデータ取得。
+- **第8週: 情報の集約 (Advanced API)** - 複数のAPIを組み合わせた高度なウィジェット。
+- **第9週: 世界へ公開する (Git & Deployment)** - バージョン管理とGitHubによるデプロイ。
 
 ### Phase 3: React & Next.js (Weeks 10-13)
-- モダンフロントエンドへの移行、TypeScript、コンポーネント設計。
+- **第10週: エンジンの換装 (Next.js 移行)** - Vanilla JSからモダンフレームワークへの移行。
+- **第11週: 分割して統治せよ (コンポーネント)** - 部品化による保守性の高い設計。
+- **第12週: 状態を管理する (State & Events)** - React Stateを用いた高度なインタラクション。
+- **第13週: データの取得 (Data Fetching)** - Server Componentsによる効率的なデータ取得。
 
 ### Phase 4: Specialization (Weeks 14-17)
-- カスタマイズとデプロイ。
+最後の4週間は、自分の興味に合わせて1つのルートを選択し、究極の機能を実装します。
+- **Route A: Tech News Hub** - 複数サイトの記事を統合する情報収集ツール。
+- **Route B: Three.js Design** - 3Dオブジェクトを用いた視覚的なインタラクション。
+- **Route C: Simple Web Game** - 高度な状態管理が必要なブラウザゲーム。
 
 ---
 
