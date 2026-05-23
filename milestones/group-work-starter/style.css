@@ -1,0 +1,100 @@
+/* ==========================================================================
+   CSS 変数 (Design Tokens)
+   [Rebuttal: なぜ変数を使うのか？]
+   色を直接 16 進数で書き込むと、後で「やっぱり青系に変えたい」となった時に
+   全行修正する手間（計算コストとミス）が発生するため。
+   ========================================================================== */
+:root {
+    --primary-color: #ea580c; /* サークルのテーマカラー */
+    --text-color: #292524;
+    --bg-color: #fff7ed;
+    --card-bg: #ffffff;
+    --gap: 20px;
+}
+
+/* 全体設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* [Critical] これがないと padding でサイズが狂う */
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* ==========================================================================
+   レイアウト (Flexbox & Grid)
+   ========================================================================== */
+
+/* ヘッダー: 横並び (Flexbox) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--gap);
+}
+
+/* ヒーローエリア */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    color: white;
+}
+
+/* アクティビティセクション: 面の配置 (Grid) */
+.activities {
+    padding: 60px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.activity-grid {
+    display: grid;
+    /* [Rebuttal: なぜ 1fr ではなく 300px 固定にしないのか？]
+       画面幅に応じて柔軟に伸び縮みさせることで、ある程度のレスポンシブ性を
+       メディアクエリなしで確保するため。 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--gap);
+}
+
+/* カードのデザイン */
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* フッター */
+.footer {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--text-color);
+    color: white;
+}

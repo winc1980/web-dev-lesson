@@ -105,6 +105,10 @@ function LikeButton() {
 }
 ```
 
+```mermaid
+erDiagram
+```
+
 <!-- 
 【講師用台本】
 具体的な書き方を見てみましょう。`useState` という関数を使います。

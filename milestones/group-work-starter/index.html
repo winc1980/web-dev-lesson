@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Template】サークルHP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts など、好みのフォントをここに追加 -->
+</head>
+<body>
+
+    <!-- [Rebuttal: なぜ header タグを使うのか？] 
+         単なる div ではなく、文書の「頭」であることを検索エンジンや支援技術に伝えるため。-->
+    <header class="header">
+        <div class="logo">Circle Name</div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション: キャッチコピーと背景画像 -->
+        <section class="hero">
+            <h1>We are [Circle Name]</h1>
+            <p>ここにサークルのスローガンや簡単な説明を書く</p>
+        </section>
+
+        <!-- アクティビティ: Gridレイアウトの練習に最適 -->
+        <section class="activities">
+            <h2 class="section-title">Activities</h2>
+            <div class="activity-grid">
+                <div class="card">
+                    <h3>イベント1</h3>
+                    <p>説明文がここに入ります。</p>
+                </div>
+                <div class="card">
+                    <h3>イベント2</h3>
+                    <p>説明文がここに入ります。</p>
+                </div>
+                <div class="card">
+                    <h3>イベント3</h3>
+                    <p>説明文がここに入ります。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 [Circle Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
