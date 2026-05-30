@@ -27,8 +27,8 @@ code, pre {
 }
 </style>
 
-# 第12週: アプリに記憶を (React State)
-## 〜 「今の状態」を覚えておく仕組みを学ぼう 〜
+# 第12週: Hooksを極める (React Hooks Mastery)
+## 〜 React 19 対応：モダンな「状態」と「副作用」の管理 〜
 
 <!-- 
 【講師用台本】

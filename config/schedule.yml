@@ -1,0 +1,28 @@
+sessions:
+  # 初心者班 (現在 week03 まで完了)
+  - date: "2026-06-06"
+    week: 4
+    title: "Week 4 - JavaScript基礎"
+    class: beginner
+  - date: "2026-06-13"
+    week: 5
+    title: "Week 5 - DOM操作"
+    class: beginner
+  - date: "2026-06-20"
+    week: 6
+    title: "Week 6 - 非同期処理"
+    class: beginner
+
+  # 経験者班 (現在 week11 まで完了)
+  - date: "2026-06-07"
+    week: 12
+    title: "Week 12 - State管理"
+    class: experienced
+  - date: "2026-06-14"
+    week: 13
+    title: "Week 13 - データフェッチ"
+    class: experienced
+  - date: "2026-06-21"
+    week: 14
+    title: "Week 14 - 専門化コース"
+    class: experienced

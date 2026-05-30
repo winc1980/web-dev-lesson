@@ -1,0 +1,28 @@
+name: Weekly Progress Check
+
+on:
+  schedule:
+    # 毎週月曜 09:00 JST (= 00:00 UTC)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install js-yaml
+        working-directory: .github/scripts
+
+      - name: Check and report progress
+        run: node .github/scripts/check-progress.js
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}

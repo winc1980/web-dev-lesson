@@ -1,0 +1,16 @@
+students:
+  # 初心者班
+  - name: サンプル生徒A
+    repo: example-student-a/identity-dashboard
+    class: beginner
+  - name: サンプル生徒B
+    repo: example-student-b/portfolio
+    class: beginner
+
+  # 経験者班
+  - name: サンプル生徒C
+    repo: example-student-c/my-app
+    class: experienced
+  - name: サンプル生徒D
+    repo: example-student-d/workshop-project
+    class: experienced

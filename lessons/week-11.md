@@ -23,7 +23,7 @@ a {
 }
 code, pre {
     background-color: #292524 !important;
-    color: #ff9c11 !important;
+    color: #ea580c !important;
 }
 </style>
 

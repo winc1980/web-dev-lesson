@@ -1,0 +1,27 @@
+name: Attendance Report
+
+on:
+  schedule:
+    # 授業当日 12:00 JST (= 03:00 UTC) に集計
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install js-yaml
+        working-directory: .github/scripts
+
+      - name: Post attendance report
+        run: node .github/scripts/attendance.js
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
